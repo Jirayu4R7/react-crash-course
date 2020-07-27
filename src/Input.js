@@ -10,7 +10,7 @@ function Input({ addPost }) {
 
   function onKeyDown(event) {
     const title = event.target.value;
-    if (event.key=== 'Enter' && title) {
+    if (event.key === 'Enter' && title) {
       addPost(title);
       setInput('');
     }
@@ -21,14 +21,17 @@ function Input({ addPost }) {
       <div className="Input__header">
         Create Post
       </div>
-      <input
+      <textarea
         className="Input__field"
-        type="text"
+        rows="4"
         value={input}
         onChange={onChange}
         onKeyDown={onKeyDown}
       />
-    </div>
+      <div className="Input__container__button">
+        <button className="Input__button" onClick={() => addPost(input)}>Post</button>
+      </div>
+    </div >
   )
 }
 

@@ -43,8 +43,27 @@ body {
   outline: none;
 }
 
+.Input__container__button {
+  margin: 10px;
+}
+
+.Input__button {
+  color: #fff;
+  background: #4167b2;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
 .Post {
   padding: 15px;
+}
+
+.Post__title {
+  word-wrap: break-word;
 }
 
 .Post__image {
